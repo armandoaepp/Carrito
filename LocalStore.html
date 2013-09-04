@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="localstorage.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body onload="ListCar();">
+
+<div class="grid space-top">
+<h4>Local Storage</h4>
+		<div class="c6">
+			<form id="frmCadastre" class="hform">
+
+
+		            <input type="hidden" id="txtOperacion"/>
+						<label for="txtID">ID:</label>
+						<input type="text" id="txtID"/>
+
+						<label for="txtName">Name:</label>
+						<input type="text" id="txtName"/>
+
+						<label for="txtPhone">Phone:</label>
+						<input type="text" id="txtPhone"/>
+
+						<label for="txtEmail">Email:</label>
+						<input type="text" id="txtEmail"/>
+
+					<div class="text-right">
+						<button type="button"  id="btnSave" onClick="GuardarCar();"> Save </button>
+		                <button type="button"  id="btn" onClick="ListCar();"> Cargar </button>
+		            </div>
+		</div>
+		<div class="c6">
+			<a href="https://twitter.com/armandoaepp" target="black_"> Creado Por Armando Pisfil Puemape  @armandoaepp </a>
+		</div>
+
+
+
+			</form>
+
+			<table id="tblList" class="table">
+
+			</table>
+</div>
+</body>
+</html>
